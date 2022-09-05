@@ -37,19 +37,20 @@ function autoRedirect(){
 /* This function looks to see what the globalpagename is and then goes to that url useing
  Flask Jsglue */
 function backbut(){
+    
     if (globalpagename == 'about'){
-        window.location.replace(Flask.url_for('about'));
+        window.location.replace("about.html");
     }
     else if (globalpagename == 'index'){
-        window.location.replace(Flask.url_for('index'));
+        window.location.replace("./index.html");
     }
     else if (globalpagename == 'contact'){
-        window.location.replace(Flask.url_for('contact'));
+        window.location.replace("contact.html");
     }
     else if (globalpagename == 'subscribe'){
-        window.location.replace(Flask.url_for('subscribe'));
+        window.location.replace("subscribe.html");
     }
     else if (globalpagename == 'None'){
-        window.location.replace(Flask.url_for('index'));
+        window.location.replace("./index.html");
     }
 }

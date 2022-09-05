@@ -143,7 +143,7 @@ Tested on four Browsers
 Log into GitHub.
 Then clone this project from GitHub:
 
-Follow this link to the Project's GitHub repository https://github.com/jonathanw82/eastbristolhops
+Follow this link to the Project's GitHub repository https://github.com/jonathanw82/EBH
 Under the repository name, click "Clone or download".
 Select clone with HTTPs, copy the clone URL for the repository.
 
@@ -158,42 +158,12 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ##### Forking the repository.
 If you would like to take a copy of this repository in its current state, this can be done by forking.
 Create an account with github or signin if you already have one,
-Follow this link to the Project's GitHub repository https://github.com/jonathanw82/eastbristolhops
+Follow this link to the Project's GitHub repository https://github.com/jonathanw82/EBH
 
 From the menu items near the top of the page, select Fork.
 On doing so the repository will be added to your own gitHub account. From there you can follow the deployment 
 details as stated below. You will also be able to make any changes you require that will not affect the 
 original master from the original repository.
-
-
-##### How to deploy from Heroku
-To deploy from Heroku, first sign up to do this go to https://www.heroku.com/
-and click the sign up button on right hand side and fill out the form to create a new account,then select Python as the development language. 
-
-At this point you will be sent a confirmation email, once the link in the email has been clicked you will be prompted to input a password and the account will be set up.
-
-Once all setup and logged in, click on the create new app button, then give your project a name using hyphens instead of spaces. The name has to be unique as 
-Heroku has thousands of apps and they cannot have the same name, select your region and select create app.
-
-You will then be presented with a dashboard with listings of your app names.
-
-From the Heroku dashboard select the app you just created, go to the deploy tab, scroll down to deployment method and click on GitHub, below you will see a connect to GitHub section, from the dropdown select your GitHub user name, then leaving the repo-name box empty click search, all the repos in your GitHub will display find the relevant repo and click connect. 
-
-Below this, there will be 2 sections that appear Automatic deploys and Manual deploys. If you set up automatic deploy, every time you make a change to the website and push to GitHub it will be automatically deployed in Heroku, I personally would not recommend this as it can have its disadvantages if, for instance, you leave debug= True and so on. 
-
-I would only use manual deploy then you can deploy on your terms after thew code has been tested and things are none to be working, to use this click deploy branch it will already be set to master, the site will be uploaded and deployed.
-
-Go back to heroku go to settings click reveal config vars, there will be a few things to add here, first setup IP so in the box that says Key type (IP) and in 
-the value box type (0.0.0.0) click add then do the same but type (PORT) and set that to (5000) click add. 
-
-Once all the steps have been taken, click more, top right hand side of page and select restart all dynos the application will now be deployed.
-
-If a message pops up stating there may be some down time until the restart has finished click OK.
-
-Under the settings tab in Heroku, scroll down to domains and your link will be displayed there. It can be used to access the live version of the application.
-
-Deployment: The site will be deployed by 
-https://www.heroku.com/
 
 
 ## Media

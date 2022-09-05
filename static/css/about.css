@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.background_image_about{
+.background_about_page{
     background-image: url('/static/media/oldcrew.jpg');                      
     background-position: center;
     background-size: cover;
