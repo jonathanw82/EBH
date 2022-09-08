@@ -1,10 +1,4 @@
-
-// This function takes the page_from and converts it to a global variable
-var globalpagename;
-function passedpage(page_from){
-    window.globalpagename = page_from;
-}
-
+"use strict";
 
 /* This function looks to see if the css has changed in this case if 
 the css has gone from hidden to block then it is executed */
@@ -32,25 +26,4 @@ observer2.observe(target2, { attributes : true, attributeFilter : ['style'] });
 // After 3 seconds the timeout triggers the backbut function and redirects to the landing page
 function autoRedirect(){
     setTimeout(backbut, 3000);
-}
-
-/* This function looks to see what the globalpagename is and then goes to that url useing
- Flask Jsglue */
-function backbut(){
-    
-    if (globalpagename == 'about'){
-        window.location.replace("about.html");
-    }
-    else if (globalpagename == 'index'){
-        window.location.replace("./index.html");
-    }
-    else if (globalpagename == 'contact'){
-        window.location.replace("contact.html");
-    }
-    else if (globalpagename == 'subscribe'){
-        window.location.replace("subscribe.html");
-    }
-    else if (globalpagename == 'None'){
-        window.location.replace("./index.html");
-    }
 }
