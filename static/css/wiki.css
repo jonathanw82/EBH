@@ -75,7 +75,7 @@ p{
 }
 
 .background_image_wiki{
-    background-image: url('./static/media/hopsback.jpg');                      
+    background-image: url('media/hopsback.jpg');                      
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
