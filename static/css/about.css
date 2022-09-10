@@ -3,7 +3,7 @@ body{
 }
 
 .background_about_page{
-    background-image: url('/static/media/oldcrew.jpg');                      
+    background-image: url('../media/oldcrew.jpg');                      
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
